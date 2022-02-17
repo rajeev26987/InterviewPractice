@@ -13,7 +13,7 @@ public abstract class RuleResolverEngine<In, Out> {
             return null;
 
         List<Rule> matchedConditions = getMatchedConditionsSet(rules, inputData);
-        Rule finalRule = resolveAndExtractCondition(matchedConditions);
+        Rule finalRule = null; //resolveAndExtractCondition(matchedConditions);
         return Objects.nonNull(finalRule) ? executeRule(finalRule, inputData) : null;
     }
 
@@ -34,7 +34,7 @@ public abstract class RuleResolverEngine<In, Out> {
     
     private Out executeRule(Rule rule, In inputData){
         Out outResult = initializeOutResult();
-        return ruleParser.parseAction(rule.getAction(), inputData, outResult);
+        return null;//ruleParser.parseAction(rule.getAction(), inputData, outResult);
     }
 
     protected abstract Out initializeOutResult();

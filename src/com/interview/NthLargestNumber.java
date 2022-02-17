@@ -6,7 +6,7 @@ import java.util.TreeMap;
 
 public class NthLargestNumber {
     public static void main(String[] args) {
-        System.out.println(findNthLargestNumber(new int[] {1, 2, 2, 3, 3, 4, 5}, 4));
+        System.out.println(findNthLargestNumber(new int[] {1, 2, 2, 3, 3, 4, 5, 6, 6, 7, 8}, 5));
     }
     private static int findNthLargestNumber(int[] arr, int target){
         Map<Integer, Integer> map = new HashMap<>();
