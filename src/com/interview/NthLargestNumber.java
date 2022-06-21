@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.TreeMap;
 
-public class NthLargestNumber {
+class NthSmallestNumber {
     public static void main(String[] args) {
         System.out.println(findNthLargestNumber(new int[] {1, 2, 2, 3, 3, 4, 5, 6, 6, 7, 8}, 5));
     }

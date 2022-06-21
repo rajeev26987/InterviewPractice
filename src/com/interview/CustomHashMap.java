@@ -9,6 +9,7 @@ public class CustomHashMap {
         hm.put("america", 2);
         System.out.println(hm.get("america"));
     }
+
     private static class HashMap<K, V>{
         static class Node<K, V>{
             K key;

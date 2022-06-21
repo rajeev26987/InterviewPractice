@@ -11,5 +11,4 @@ Minimum meeting time is 30 mins.
 Day duration: 8 Hrs.
  */
 public class AvailableFreeSlots {
-    Runnable
 }

@@ -2,17 +2,23 @@ package com.interview;
 
 public class ChessPattern {
     public static void main(String[] args) {
-        for (int i = 0; i < 8; i++) {
-            StringBuilder sb = new StringBuilder();
-            for (int j = 0; j < 8; j++) {
-                if(i % 2 == j % 2){
-                    sb.append("W");
-                } else{
-                    sb.append("B");
-                }
+
+        ChessPattern my = new ChessPattern();
+        my.call(new One());
+
+
+    }
+
+    void call(One o){
+        o.start();
+    }
+
+    static class One extends Thread{
+        @Override
+        public void run() {
+            for (int i = 0; i < 3; i++) {
+                System.out.println(i);
             }
-            System.out.print(sb.toString());
-            System.out.println();
         }
     }
 }
